@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #81c4ff;
+            color: #fbfbfb;
+            text-align: center;
+            padding: 3rem 0;
+            position: relative;
+        }
+
+        .header-content h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+        }
+
+        /* Add styles for the round profile picture */
+        .profile-picture {
+            width: 120px; 
+            height: 120px;
+            border-radius: 75%; 
+            object-fit: cover; 
+            position: absolute;
+            top: 90px; 
+            left: 90px; 
+            transition: transform 0.5s ease-in-out;
+            box-shadow: 0 0 15px rgba(81, 196, 255, 0.5);
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 0 25px rgba(81, 196, 255, 1); 
+        }
+
+        nav {
+            background-color: #16588E;
+            color: #fffdfd;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #f6f3f3;
+            font-size: 1.1rem;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        /* Hover effect on navigation links with AI-inspired effect */
+        nav ul li a:hover {
+            color: #00ff90; 
+            transform: translateY(-5px); 
+            text-shadow: 0 0 10px rgba(0, 255, 144, 1); 
+        }
+
+        .section-content {
+            background-color: #1e1e1e;
+            padding: 2rem;
+            margin: 1rem;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            text-align: justify;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease;
+        }
+
+        .section-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 30px rgba(0, 255, 144, 0.5);
+        }
+
+        .download-button {
+            background-color: #333;
+            color: #fff;
+            padding: 0.7rem 1.2rem;
+            text-decoration: none;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 15px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+            transform: translateY(-5px); 
+        }
+
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        /* AI Text Effect */
+        .ai-text {
+            color: #00ff90;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-shadow: 0 0 15px rgba(0, 255, 144, 0.8);
+            animation: aiGlow 1.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes aiGlow {
+            0% {
+                text-shadow: 0 0 10px rgba(0, 255, 144, 0.7), 0 0 20px rgba(0, 255, 144, 0.5), 0 0 30px rgba(0, 255, 144, 0.3);
+            }
+            100% {
+                text-shadow: 0 0 20px rgba(0, 255, 144, 1), 0 0 30px rgba(0, 255, 144, 0.8), 0 0 40px rgba(0, 255, 144, 0.6);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <!-- Add your profile picture here -->
+            <img src="./IMG_0638.png" alt="Your Profile Picture" class="profile-picture">
+            <h1>SHAHINA</h1>
+            <p><b>Fresher - BCA Graduate</b></p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about"><b>About</b></a></li>
+            <li><a href="#education"><b>Education</b></a></li>
+            <li><a href="#skills"><b>Skills</b></a></li>
+            <li><a href="#projects"><b>Projects</b></a></li>
+            <li><a href="#resume"><b>Resume</b></a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <div class="section-content">
+            <h2 class="ai-text">About Me</h2>
+            <p>I'm a <b>Fresher</b> with a Bachelor's degree in Computer Applications (BCA) from the University of Madras. I am passionate about <b class="ai-text">Artificial Intelligence</b> and have a strong foundation in data science, programming, and machine learning. I am eager to apply my skills in a dynamic work environment where I can grow and contribute to innovative projects. I specialize in Python, AI algorithms, and have completed various projects related to automation and machine learning.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="section-content">
+            <h2 class="ai-text">Education</h2>
+            <p>University of Madras - BCA (Bachelor of Computer Applications) - [Year of Graduation]</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-content">
+            <h2 class="ai-text">Skills</h2>
+            <ul>
+                <li>Python Programming</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Data Structures and Algorithms</li>
+                <li>SQL</li>
+                <li>Data Visualization (Matplotlib, Seaborn)</li>
+                <li>Communication and Collaboration</li>
+                <li>Problem Solving</li>
+                <li>Critical Thinking</li>
+                <li>AI-based Tools (TensorFlow, Scikit-learn)</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="section-content">
+            <h2 class="ai-text">Projects</h2>
+            <ul>
+                <li><a href="#">AI-Based Image Classification</a></li>
+                <li><a href="#">Sentiment Analysis of Social Media Data</a></li>
+                <li><a href="#">Predictive Modeling for Student Grades</a></li>
+                <li><a href="#">Movie Recommendation System</a></li>
+                <!-- Add more project links here -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="resume">
+        <div class="section-content">
+            <center>
+                <h2 class="ai-text">Resume</h2>
+                <a href="./mycv.pdf" target="_blank" class="download-button"><b>Download CV</b></a>
+            </center>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 SHAHINA</p>
+    </footer>
+
+    <script>
+        // Smooth scrolling to section when clicking on navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
